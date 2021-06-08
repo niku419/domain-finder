@@ -14,14 +14,14 @@ export default function DomainFinder() {
 	const [domain, setDomain]= useState("")
 	const [pdomain, setPDomain]= useState()
 	const [redirect, setRedirect] = useState(false)
-
+	const apikey
 	function handleClick(e){
 		e.preventDefault()
 		setPDomain(domain)
 	}
 
 	useEffect(()=> {
-		fetch(`https://api.hunter.io/v2/domain-search?domain=${pdomain}&api_key=2104bd16df84f03b09a2ff3135c37d2ed810e05a`)
+		fetch(`https://api.hunter.io/v2/domain-search?domain=${pdomain}&api_key=${apikey}`)
 		.then(res => res.json())
 		.then(response => {
 			setDomainResults(response.data)
