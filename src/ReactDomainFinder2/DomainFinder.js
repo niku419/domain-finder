@@ -14,9 +14,10 @@ export default function DomainFinder() {
 	const [domain, setDomain]= useState("")
 	const [pdomain, setPDomain]= useState()
 	const [redirect, setRedirect] = useState(false)
-	const apikey
+	const apikey = ""
 	function handleClick(e){
 		e.preventDefault()
+		setIsLoaded(false)
 		setPDomain(domain)
 	}
 
