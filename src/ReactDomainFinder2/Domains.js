@@ -31,7 +31,7 @@ export default function Domains() {
 						))}
 					</Card>
 				</ListGroup>
-        <a href="/" className="btn btn-secondary btn-lg" tabIndex="-1" role="button" aria-disabled="true">
+        <a href="/" className="btn btn-secondary pt-2" tabIndex="-1" role="button" aria-disabled="true">
 					Go back !!
 				</a>
 				</>
