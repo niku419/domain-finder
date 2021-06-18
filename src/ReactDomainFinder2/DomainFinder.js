@@ -1,7 +1,7 @@
 import React,{useState, useEffect, useContext} from 'react'
 import { Container, Form, Button, Row, Col, Jumbotron, Spinner, Navbar, Nav } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+//import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faGithub, faFacebookF, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
 import { Redirect } from 'react-router-dom'
 import { DomainContext } from './Home'
