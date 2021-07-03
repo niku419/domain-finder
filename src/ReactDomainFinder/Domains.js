@@ -6,7 +6,7 @@ export default function Domains() {
   const { domainResults } = useContext(DomainContext)
 
   return (
-    <Container>
+    <Container className="py-4">
       {domainResults.emails.length> 0 && <>
 				<ListGroup>
 					<Card className="text-center" bg="dark" >
@@ -31,7 +31,7 @@ export default function Domains() {
 						))}
 					</Card>
 				</ListGroup>
-        <a href="/" className="btn btn-secondary btn-lg" tabIndex="-1" role="button" aria-disabled="true">
+        <a href="/" className="btn btn-secondary py-2" tabIndex="-1" role="button" aria-disabled="true">
 					Go back !!
 				</a>
 				</>
