@@ -22,7 +22,7 @@ export default function DomainFinder() {
 	}
 
 	useEffect(()=> {
-		fetch(`https://api.hunter.io/v2/domain-search?domain=${pdomain}&api_key=${apikey}`)
+		fetch(`https://api.hunter.io/v2/domain-search?domain=${pdomain}&api_key=${apikey}`, {mode: 'no-cors'})
 		.then(res => res.json())
 		.then(response => {
 			setDomainResults(response.data)
