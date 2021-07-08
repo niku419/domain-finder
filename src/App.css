@@ -1,4 +1,45 @@
-*{
-  padding: 0%;
-  margin: 0%;
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  background-color: #fcde67;
+}
+body {
+  font-family: system-ui;
+  margin: 0;
+}
+.not-transparent{
+  background-color: #5bccf6 !important;
+}
+.jumbotron{
+  background-color: #5bccf6 !important;
+}
+.text{
+  color: white !important;
+}
+.badge-primary{
+  background-color: #030e12 !important;
+  letter-spacing: 0.4rem;
+  padding: 1rem;
+}
+.btn-primary:active, .btn-primary:visited {
+  background-color: #030e12 !important;
+  color: white !important;
+  border-color: #5bccf6 !important;
+}
+.btn-primary:hover{
+  border-color: #5bccf6 !important;
+  color: white !important;
+}
+.btn-primary{
+  background-color: #030e12 !important;
+  border-color: #030e12 !important;
+  color: white !important;
+}
+.list-group-item{
+  background-color: #5bccf6 !important;
+}
+.card{
+  background-color: #030e12 !important;
 }

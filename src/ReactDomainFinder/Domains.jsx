@@ -9,29 +9,23 @@ export default function Domains() {
     <Container className="py-4">
       {domainResults.emails.length> 0 && <>
 				<ListGroup>
-					<Card className="text-center" bg="dark" >
+					<Card className="text-center bg"  >
 						<Card.Header >
 							<h3 className="text-white" style={{textTransform: "uppercase"}}>{domainResults.organization}</h3>
-							<small className="text-muted">
-								<cite title="Source Title">{domainResults.domain}</cite>
-							</small>
+							<Card.Text className="text">{domainResults.domain}</Card.Text>
 						</Card.Header>
 						{domainResults.domain && domainResults.emails.map((email, index) => (
 							<ListGroupItem key={index}>
 								<Card.Body>
 									<Card.Title>{email.first_name || " "} {email.last_name || " "}</Card.Title>
 									<Card.Text>{email.position}</Card.Text>
-									<footer className="blockquote-footer">
-										<small className="text-muted">
-											<cite title="Source Title">{email.value}</cite>
-										</small>
-									</footer>
+									<Card.Text className="text">{email.value}</Card.Text>
 								</Card.Body>
 							</ListGroupItem>
 						))}
 					</Card>
 				</ListGroup>
-        <a href="/" className="btn btn-secondary py-2" tabIndex="-1" role="button" aria-disabled="true">
+        <a href="/" className="btn btn-primary my-2" tabIndex="-1" role="button" aria-disabled="true">
 					Go back !!
 				</a>
 				</>
