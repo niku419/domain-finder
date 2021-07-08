@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Home from './ReactDomainFinder2/Home'
+import Home from './ReactDomainFinder/Home'
 import './App.css'
 
 function App() {
