@@ -1,5 +1,5 @@
 import React,{useState, useEffect, useContext} from 'react'
-import { Container, Form, Button, Jumbotron, Spinner, Navbar, Nav, Badge } from 'react-bootstrap'
+import { Container, Form, Button, Jumbotron, Spinner, Navbar, Nav, Badge, Alert } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faGithub, faFacebookF, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
@@ -46,6 +46,9 @@ export default function DomainFinder() {
 				<Container className="py-4">
 					{redirect && <Redirect to='/domains'/>}
 					<Jumbotron>
+						<Alert  variant="danger">
+						    The total searches for this site got exhausted, will renew it soon!!
+						  </Alert>
 						<h1 style={{textAlign: "center"}} className="primary"><Badge variant="primary">Domain Search</Badge></h1>
 						<div className="mt-3">
 							<em>
